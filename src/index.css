@@ -8,112 +8,148 @@
   font-family: "Roboto", sans-serif;;
 }
 
-.listFriends {
-  display: flex;
-  flex-direction: column;
+button {
+  background-color: orange;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 
 .content {
-  width: 50vw;
-  padding: 50px;
+  width: 90%;
+  max-width: 60rem;
   display: flex;
-  margin: 100px auto;
-  align-items: center;
-}
+  margin: 200px auto;
+} 
 
-button {
-  border: none;
-  padding: 8px 17px;
-  text-transform: capitalize;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
-.aboutFriend {
+.people {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 10px 20px;
+  gap: 30px;
+  padding: 20px 30px;
 }
 
-.aboutFriend form {
+.buttonAddFriend {
+  align-self: flex-end;
+}
+
+.friends {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  background-color: rgb(255, 241, 214);
-  border-radius: 8px;
+  gap: 25px;
 }
 
-.aboutFriend form label {
+.person {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} 
-
-.aboutFriend form input {
-  outline: none;
-  border: 1px solid rgb(255, 209, 125);
-  padding: 6px 5px;
 }
 
-.aboutFriend form > button {
-  align-self: flex-end;
-  background-color: orange;
-  width: calc(50% - 8.5px);
-}
-
-.aboutFriend>button {
-  align-self: flex-end;
-  background-color: lightgray;
-  
-}
-
-.item {
-  width: 100%;
+.profile {
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: center;
-  padding: 10px;
-}
-
-.itemInfo {
-  display: flex;
-  align-items: center;
   gap: 15px;
+  align-items: center;
 }
 
-.item img {
-  width: 60px;
-  height: 60px;
+.profile img {
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
 }
 
-.item .info {
+.fromPay {
+  margin: 0 auto;
+  width: 47%;
+  height: 22rem;
+  background-color: rgb(255, 236, 200);
+  padding: 25px 30px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.fromPay h2 {
+  text-transform: uppercase;
+  color: #1d3557;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.fromPay form label input, select {
+  border: 1px solid rgb(233, 206, 156);
+  padding: 7px 5px;
+  width: 120px;
+  text-align: center;
+  outline: none;
+  border-radius: 4px;
+}
+
+.fromPay form label {
+  font-size: 1.07rem;
+  font-weight: 600;
+  color: #1d3557;
+}
+
+.fromPay form  button {
+  align-self:flex-end;
+  width: 120px;
+}
+
+.fromPay form label input[name="xexpense"] {
+  background-color: rgb(247, 247, 247);
+}
+
+.info, .fromPay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .info p:first-child {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
 .info p:last-child {
   font-size: 0.9rem;
-  text-transform: capitalize;
+}
+
+.addFriend form, .fromPay form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: rgb(255, 236, 200);
+  padding: 20px 15px;
+}
+
+.addFriend form label, .fromPay form label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addFriend form label input {
+  border: 1px solid rgb(241, 192, 101);
+  padding: 7px ;
+  width: 220px;
+  outline: none;
+}
+
+.addFriend form  button {
+  align-self:flex-end;
+  width: 220px;
 }
 
 
-.item button {
-  background-color: orange;
-}
+
+
+
+
 

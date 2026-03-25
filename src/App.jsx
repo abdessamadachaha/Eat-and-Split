@@ -1,10 +1,10 @@
-import Friends from "./components/Friends";
+import Content from "./components/Content";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <Friends />
+      <Content />
     </>
   );
 }
