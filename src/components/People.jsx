@@ -1,7 +1,7 @@
 import Friends from "./People/Friends";
 import AddFriend from "./People/AddFriend";
 
-function People({ items, show, setItems, setShow }) {
+function People({ items, show, setItems, setShow, setSelected, selected }) {
     function handleShow() {
         setShow(prev => !prev)
     }
@@ -10,10 +10,13 @@ function People({ items, show, setItems, setShow }) {
         <div className="people">
             <Friends 
                 items = {items}
+                setSelected = {setSelected}
+                selected = {selected}
             />
 
             <AddFriend 
                 show = {show}
+                setShow={setShow}
                 setItems = {setItems}
             />
 

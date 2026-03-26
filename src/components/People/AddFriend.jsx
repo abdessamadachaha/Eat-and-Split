@@ -1,9 +1,11 @@
-function AddFriend({ setItems, show }) {
+function AddFriend({ setItems, show, setShow }) {
 
     function handleFriend(fromData) {
         const id = crypto.randomUUID();
         const friend = {id, ...Object.fromEntries(fromData)}
         setItems(prev => [...prev, friend])
+        setShow(show => !show)
+
     }
 
     return (

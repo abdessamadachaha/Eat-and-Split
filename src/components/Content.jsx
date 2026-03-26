@@ -5,6 +5,7 @@ import People from "./People";
 function Content() {
     const [items, setItems] = useState([]);
     const [show, setShow] = useState(false);
+    const [selected, setSelected] = useState(null);
 
     return (
         <div className="content">
@@ -13,10 +14,10 @@ function Content() {
                 setItems = {setItems}
                 show = {show}
                 setShow = {setShow}
+                setSelected = {setSelected}
+                selected = {selected}
             />
-            <FormPay 
-                
-            />
+            {selected && <FormPay selected= {selected}/> }
 
             
 

@@ -1,7 +1,7 @@
-function FormPay() {
+function FormPay({ selected }) {
     return (
         <div className="fromPay">
-            <h2>split a bill with X</h2>
+            <h2>split a bill with {selected.name}</h2>
             <form action="">
                 <label>
                     💰 Bill value
@@ -21,7 +21,7 @@ function FormPay() {
                 </label>
 
                 <label>
-                    🧑🏻‍🤝‍🧑🏼 X expense
+                    🧑🏻‍🤝‍🧑🏼 {selected.name} expense
                     <input 
                         type="text"
                         name="xexpense"
@@ -32,8 +32,8 @@ function FormPay() {
                 <label>
                     🤑 Who is paying the bill?
                     <select name="" id="">
-                        <option value="">You</option>
-                        <option value="">X</option>
+                        <option value="you">You</option>
+                        <option value={selected.name}>{selected.name}</option>
                     </select>
                 </label>
 

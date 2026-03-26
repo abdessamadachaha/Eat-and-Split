@@ -39,13 +39,21 @@ button {
 .friends {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
+}
+
+.selected {
+  background-color: rgb(255, 236, 200);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .person {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+
 }
 
 .profile {
